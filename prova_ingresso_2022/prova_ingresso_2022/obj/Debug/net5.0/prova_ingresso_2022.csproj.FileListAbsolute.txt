@@ -1,0 +1,16 @@
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.exe
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.deps.json
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.runtimeconfig.json
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.runtimeconfig.dev.json
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.dll
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\ref\prova_ingresso_2022.dll
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.pdb
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.AssemblyReference.cache
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.GeneratedMSBuildEditorConfig.editorconfig
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.AssemblyInfoInputs.cache
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.AssemblyInfo.cs
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.CoreCompileInputs.cache
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.dll
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\ref\prova_ingresso_2022.dll
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.pdb
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.genruntimeconfig.cache
