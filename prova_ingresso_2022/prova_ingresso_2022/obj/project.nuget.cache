@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gQXV7EE/3rTXV+gVwzwTJJbHzvYKQdKdv3oxNUydvDCZZJ41fQp9c6y6isi8XQlHoKgCqb8Stkiw9aF2NH/bBQ==",
+  "dgSpecHash": "eCma84nv0fN3FqnTuyhdKVhxF4VEjVZBdkD7IK6cipR2NsEJqhnVP0gG19b+AkPCEBSJ93qBPbe/8QF11c1VYQ==",
   "success": true,
   "projectFilePath": "D:\\Scuola\\Secondaria di Secondo Grado\\V F A.S. 2022-2023\\Informatica\\Prova_ingresso_informatica\\prova_ingresso_2022\\prova_ingresso_2022\\prova_ingresso_2022.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Famiglia Di Lena\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -14,3 +14,5 @@ D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingre
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\ref\prova_ingresso_2022.dll
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.pdb
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.genruntimeconfig.cache
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.CopyComplete
