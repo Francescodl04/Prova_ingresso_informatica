@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "s68PEn3uiuDmXWH/UNW6h0x0/vi8zK2/6+4HPK3xRJ7lgdB5mW3gUU/82o6WrVG0nTfbO5F7Ov9sgBNJQnCidQ==",
+  "dgSpecHash": "eCma84nv0fN3FqnTuyhdKVhxF4VEjVZBdkD7IK6cipR2NsEJqhnVP0gG19b+AkPCEBSJ93qBPbe/8QF11c1VYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\Documents\\Scuola\\Informatica\\Prova_ingresso_informatica\\prova_ingresso_2022\\prova_ingresso_2022\\prova_ingresso_2022.csproj",
+  "projectFilePath": "D:\\Scuola\\Secondaria di Secondo Grado\\V F A.S. 2022-2023\\Informatica\\Prova_ingresso_informatica\\prova_ingresso_2022\\prova_ingresso_2022\\prova_ingresso_2022.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\franc\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Famiglia Di Lena\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

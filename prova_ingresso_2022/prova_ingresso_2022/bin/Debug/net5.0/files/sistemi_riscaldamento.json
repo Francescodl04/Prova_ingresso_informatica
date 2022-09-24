@@ -1,1 +1,42 @@
-[{"nome":"0","tipo":"0","rendimento":"0","costoMacchina":0.0,"costoInstallazione":0.0,"fonteRiscaldamento":"0"}]
+[
+  {
+    "nome": "Caldaia tradizionale",
+    "tipo": "Caldaia a camera stagna",
+    "rendimento": 0.9,
+    "costoMacchina": 600.0,
+    "costoInstallazione": 150.0,
+    "fonteRiscaldamento": "Gas naturale"
+  },
+  {
+    "nome": "Caldaia a condensazione",
+    "tipo": "Caldaia a condensazione",
+    "rendimento": "1",
+    "costoMacchina": 1500.0,
+    "costoInstallazione": 175.0,
+    "fonteRiscaldamento": "Gas naturale"
+  },
+  {
+    "nome": "Stufa elettrica",
+    "tipo": "Stufa elettrica",
+    "rendimento": 1,
+    "costoMacchina": 100.0,
+    "costoInstallazione": 0.0,
+    "fonteRiscaldamento": "Energia elettrica"
+  },
+  {
+    "nome": "Climatizzatore monosplit",
+    "tipo": "Pompa di calore",
+    "rendimento": 2.8,
+    "costoMacchina": 800.0,
+    "costoInstallazione": 200.0,
+    "fonteRiscaldamento": "Energia elettrica"
+  },
+  {
+    "nome": "Pompa di calore professionale",
+    "tipo": "Pompa di calore",
+    "rendimento": 3.6,
+    "costoMacchina": 8000.0,
+    "costoInstallazione": 1000.0,
+    "fonteRiscaldamento": "Energia elettrica"
+  }
+]

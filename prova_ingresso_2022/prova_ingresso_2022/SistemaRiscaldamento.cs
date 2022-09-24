@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * @name Francesco Di Lena, classe 5F
+ * @date 24/09/2022
+ * @file SistemaRiscaldamento.cs
+**/
+
+using System;
 using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
@@ -13,7 +19,7 @@ namespace prova_ingresso_2022
         [JsonProperty]
         protected string tipo { get; set; }
         [JsonProperty]
-        protected string rendimento { get; set; }
+        protected double rendimento { get; set; }
         [JsonProperty]
         protected double costoMacchina { get; set; }
         [JsonProperty]
@@ -21,7 +27,7 @@ namespace prova_ingresso_2022
         [JsonProperty]
         protected string fonteRiscaldamento { get; set; }
 
-        public SistemaRiscaldamento(string nome, string tipo, string rendimento, double costoMacchina, double costoInstallazione, string fonteRiscaldamento)
+        public SistemaRiscaldamento(string nome, string tipo, double rendimento, double costoMacchina, double costoInstallazione, string fonteRiscaldamento)
         {
             this.nome = nome;
             this.tipo = tipo;
@@ -41,7 +47,7 @@ namespace prova_ingresso_2022
             return tipo;
         }
 
-        public string GetRendimento()
+        public double GetRendimento()
         {
             return rendimento;
         }

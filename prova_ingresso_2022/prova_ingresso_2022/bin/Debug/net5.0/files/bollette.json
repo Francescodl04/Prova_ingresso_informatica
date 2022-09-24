@@ -1,0 +1,16 @@
+[
+  {
+    "tipoMateria": "Energia elettrica",
+    "spesaMateria": 0.276,
+    "spesaTrasportoGestioneContatore": 96.0,
+    "oneriSistema": 47.0,
+    "QVD": 70.0
+  },
+  {
+    "tipoMateria": "Gas naturale",
+    "spesaMateria": 1.092216,
+    "spesaTrasportoGestioneContatore": 96.0,
+    "oneriSistema": 47.0,
+    "QVD": 70.0
+  }
+]

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * @name Francesco Di Lena, classe 5F
+ * @date 24/09/2022
+ * @file OperazioniFile.cs
+**/
+
+using System;
 using System.IO;
 
 namespace prova_ingresso_2022

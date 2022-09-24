@@ -1,14 +1,27 @@
-﻿using System;
+﻿/**
+ * @name Francesco Di Lena, classe 5F
+ * @date 24/09/2022
+ * @file Bolletta.cs
+**/
+
+using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace prova_ingresso_2022
 {
+    [Serializable]
     class Bolletta
     {
+        [JsonProperty]
         protected string tipoMateria { get; set; }
+        [JsonProperty]
         protected double spesaMateria { get; set; }
+        [JsonProperty]
         protected double spesaTrasportoGestioneContatore { get; set; }
+        [JsonProperty]
         protected double oneriSistema { get; set; }
+        [JsonProperty]
         protected double QVD { get; set; }
 
         public Bolletta(string tipoMateria, double spesaMateria, double spesaTrasportoGestioneContatore, double oneriSistema, double QVD)
@@ -58,22 +71,14 @@ namespace prova_ingresso_2022
             return bollette;
         }
 
-        public double CalcoloCostoBolletta()
+        public double CalcoloCostoBolletta(double consumo, double rendimento)
         {
-            return spesaMateria + spesaTrasportoGestioneContatore + oneriSistema + QVD;
+            return (spesaMateria * consumo)/rendimento + spesaTrasportoGestioneContatore + oneriSistema + QVD;
         }
 
-        public override string ToString()
+        new public virtual string ToString()
         {
-            return $"Bolletta di {tipoMateria}: {spesaMateria} - {spesaTrasportoGestioneContatore} - {oneriSistema} - {QVD}";
-        }
-    }
-
-    class EnergiaElettrica:Bolletta
-    {
-        public EnergiaElettrica() : base(tipoMateria, spesaMateria, spesaTrasportoGestioneContatore, oneriSistema, QVD)
-        {
-
+            return $"Bolletta di {tipoMateria}: {spesaMateria} - {spesaTrasportoGestioneContatore} euro - {oneriSistema} euro - {QVD} euro";
         }
     }
 }
