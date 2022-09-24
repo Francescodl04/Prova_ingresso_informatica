@@ -16,3 +16,21 @@ D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingre
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.genruntimeconfig.cache
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Scuola\Secondaria di Secondo Grado\V F A.S. 2022-2023\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.CopyComplete
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.exe
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.deps.json
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.runtimeconfig.json
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.runtimeconfig.dev.json
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.dll
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\ref\prova_ingresso_2022.dll
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\prova_ingresso_2022.pdb
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.AssemblyReference.cache
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.AssemblyInfoInputs.cache
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.AssemblyInfo.cs
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.csproj.CopyComplete
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.dll
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\ref\prova_ingresso_2022.dll
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.pdb
+C:\Users\franc\Documents\Scuola\Informatica\Prova_ingresso_informatica\prova_ingresso_2022\prova_ingresso_2022\obj\Debug\net5.0\prova_ingresso_2022.genruntimeconfig.cache

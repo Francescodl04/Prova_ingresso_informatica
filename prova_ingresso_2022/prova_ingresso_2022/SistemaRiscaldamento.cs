@@ -82,7 +82,7 @@ namespace prova_ingresso_2022
 
         public override string ToString()
         {
-            return $"{nome} - {tipo} - {rendimento} - {costoMacchina} € - {costoInstallazione} € - {fonteRiscaldamento}";
+            return $"{nome} - {tipo} - {rendimento} - {costoMacchina} euro - {costoInstallazione} euro - {fonteRiscaldamento}";
         }
     }
 }

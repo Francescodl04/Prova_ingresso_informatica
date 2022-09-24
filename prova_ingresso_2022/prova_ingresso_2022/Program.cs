@@ -16,7 +16,8 @@ namespace prova_ingresso_2022
         private static readonly string[] intestazioniFunzioni = new string[] { "Ad ogni richiesta inserisci un valore o una parola e premi invio...", "Ecco i sistemi di riscaldamento inseriti:", "Attraverso questa funzione eliminerai OGNI sistema di riscaldamento da te inserito." };
         private static readonly string[] descrizioneDatiSistemiRiscaldamento = new string[] { "il nome", "il tipo", "il rendimento", "il costo della macchina", "il costo di installazione", "la fonte di riscaldamento" };
         private static readonly string[] descrizioneDatiBolletta = new string[] { "il tipo della materia", "la spesa per la materia", "la spesa per il trasporto e la gestione del contatore", "gli oneri di sistema", "il QVD" };
-        private static readonly string[] percorsiIO = new string[] { "files", "files/sistemi_riscaldamento.json", "files/bollette.json", "files/fonti_energia.json" };
+        private static readonly string[] percorsiCartelle = new string[] { "files" };
+        private static readonly string[] percorsiFile = new string[] {"files/sistemi_riscaldamento.json", "files/bollette.json" };
         private static List<SistemaRiscaldamento> SistemiRiscaldamento = new List<SistemaRiscaldamento>();
         private static List<Bolletta> Bollette = new List<Bolletta>();
 
@@ -51,26 +52,24 @@ namespace prova_ingresso_2022
         static private void OperazioniIniziali()
         {
             OperazioniFile operazioniFile = new OperazioniFile();
-            for (int i = 0; i < percorsiIO.Length; i++)
+            for (int i = 0; i < percorsiCartelle.Length; i++)
             {
-                if (File.Exists(percorsiIO[i]) == true)
+                if (Directory.Exists(percorsiCartelle[i]) == false)
+                {
+                    operazioniFile.CreaCartella(percorsiCartelle[i]);
+                }
+            }
+            for (int i = 0; i < percorsiFile.Length; i++)
+            {
+                if (File.Exists(percorsiFile[i]) == true)
                 {
                     switch (i)
                     {
                         case 0:
-                            if (Directory.Exists(percorsiIO[i]) == false)
-                            {
-                                operazioniFile.CreaCartella(percorsiIO[i]);
-                            }
+                            SistemiRiscaldamento = JsonConvert.DeserializeObject<List<SistemaRiscaldamento>>(operazioniFile.LeggiFile(percorsiFile[i]));
                             break;
                         case 1:
-                            SistemiRiscaldamento = JsonConvert.DeserializeObject<List<SistemaRiscaldamento>>(operazioniFile.LeggiFile(percorsiIO[i]));
-                            break;
-                        case 2:
-                            FontiEnergia = JsonConvert.DeserializeObject<List<FonteEnergia>>(operazioniFile.LeggiFile(percorsiIO[i]));
-                            break;
-                        case 3:
-                            Bollette = JsonConvert.DeserializeObject<List<Bolletta>>(operazioniFile.LeggiFile(percorsiIO[i]));
+                            Bollette = JsonConvert.DeserializeObject<List<Bolletta>>(operazioniFile.LeggiFile(percorsiFile[i]));
                             break;
                     }
                 }
@@ -115,7 +114,7 @@ namespace prova_ingresso_2022
             MostraIntestazione(false);
             Console.WriteLine("Salvataggio delle informazioni in corso...");
             OperazioniFile operazioniFile = new OperazioniFile();
-            Console.WriteLine(operazioniFile.ScriviFile(percorsiIO[1], JsonConvert.SerializeObject(SistemiRiscaldamento)));
+            Console.WriteLine(operazioniFile.ScriviFile(percorsiFile[0], JsonConvert.SerializeObject(SistemiRiscaldamento)));
         }
 
         static private void SchermataNuovaBolletta()
@@ -127,7 +126,7 @@ namespace prova_ingresso_2022
             MostraIntestazione(false);
             Console.WriteLine("Salvataggio delle informazioni in corso...");
             OperazioniFile operazioniFile = new OperazioniFile();
-            Console.WriteLine(operazioniFile.ScriviFile(percorsiIO[1], JsonConvert.SerializeObject(Bollette)));
+            Console.WriteLine(operazioniFile.ScriviFile(percorsiFile[1], JsonConvert.SerializeObject(Bollette)));
         }
 
         static private void SchermataMostraSistemiRiscaldamento()
@@ -157,6 +156,11 @@ namespace prova_ingresso_2022
                 {
                     case "S":
                         Console.WriteLine("Eliminazione in corso...\n");
+                        OperazioniFile operazioniFile = new OperazioniFile();
+                        for(int i=1; i <percorsiFile.Length; i++)
+                        {
+                            operazioniFile.EliminaFile(percorsiFile[i]);
+                        }
                         MostraIntestazione(false);
                         Console.WriteLine("Eliminazione completata!");
                         erroreInserimento = false;

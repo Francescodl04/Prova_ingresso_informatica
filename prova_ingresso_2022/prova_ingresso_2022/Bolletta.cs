@@ -58,9 +58,22 @@ namespace prova_ingresso_2022
             return bollette;
         }
 
+        public double CalcoloCostoBolletta()
+        {
+            return spesaMateria + spesaTrasportoGestioneContatore + oneriSistema + QVD;
+        }
+
         public override string ToString()
         {
-            return $"{tipoMateria} - {spesaMateria} - {spesaTrasportoGestioneContatore} - {oneriSistema} - {QVD}";
+            return $"Bolletta di {tipoMateria}: {spesaMateria} - {spesaTrasportoGestioneContatore} - {oneriSistema} - {QVD}";
+        }
+    }
+
+    class EnergiaElettrica:Bolletta
+    {
+        public EnergiaElettrica() : base(tipoMateria, spesaMateria, spesaTrasportoGestioneContatore, oneriSistema, QVD)
+        {
+
         }
     }
 }
