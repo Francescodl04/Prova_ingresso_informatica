@@ -1,5 +1,5 @@
 ﻿/**
- * @name Francesco Di Lena, classe 5F
+ * @name francescodl04
  * @date 24/09/2022
  * @file Program.cs
 **/ 
@@ -11,22 +11,35 @@ using Newtonsoft.Json;
 
 namespace prova_ingresso_2022
 {
+    /**
+     * @class Program
+     * @brief La classe Program esegue la totalità della visualizzazione dei risultati delle altre classi e metodi.
+     **/
     class Program
     {
+        //Attributi
+
         private static readonly string logo = "                      ___ _             _    _         _     _             \n" +
                                      "                     | _ (_)___ __ __ _| |__| |__ _ __| |_ _(_)___ ___ _ _ \n" +
                                      "                     |   / (_-</ _/ _` | / _` / _` / _` \\ V / (_-</ _ \\ '_|\n" +
                                      "                     |_|_\\_/__/\\__\\__,_|_\\__,_\\__,_\\__,_|\\_/|_/__/\\___/_|\n";
         private static readonly string benvenuto = "\nBenvenuto, scegli un opzione dal menu inserendo il numero corrispondente e premendo invio...\n";
-        private static readonly string[] opzioniMenu = new string[] { "Inserisci un nuovo sistema di riscaldamento", "Inserisci una nuova bolletta", "Visualizza i sistemi di riscaldamento inseriti", "Visualizza le bollette inserite", "Scopri il miglior sistema di riscaldamento per la tua casa", "Riporta il programma alle impostazioni iniziali", "Esci dal programma" };
+        private static readonly string[] opzioniMenuPrincipale = new string[] { "Inserisci un nuovo sistema di riscaldamento", "Inserisci una nuova bolletta", "Visualizza i sistemi di riscaldamento inseriti", "Visualizza le bollette inserite", "Scopri il miglior sistema di riscaldamento per la tua casa", "Riporta il programma alle impostazioni iniziali", "Esci dal programma" };
         private static readonly string[] intestazioniFunzioni = new string[] { "Ad ogni richiesta inserisci un valore o una parola e premi invio...", "Ecco i sistemi di riscaldamento inseriti:", "Ecco le bollette inserite:", "Attraverso questa funzione eliminerai OGNI sistema di riscaldamento da te inserito." };
-        private static readonly string[] descrizioneDatiSistemiRiscaldamento = new string[] { "il nome", "il tipo", "il rendimento (nel formato x.x o x,x)", "il costo della macchina (in euro)", "il costo di installazione (in euro)", "la fonte di riscaldamento" };
+        private static readonly string[] descrizioneDatiSistemiRiscaldamento = new string[] { "il nome", "il tipo", "il rendimento (nel formato x,x)", "il costo della macchina (in euro)", "il costo di installazione (in euro)", "la fonte di riscaldamento" };
         private static readonly string[] descrizioneDatiBolletta = new string[] { "il tipo della materia", "la spesa annuale per la materia ( solo il numero in euro/unità misura materia)", "la spesa annuale per il trasporto e la gestione del contatore (in euro)", "gli oneri di sistema annuali (in euro)", "la Quota Vendita al Dettaglio annuale (QVD, in euro)" };
         private static readonly string[] percorsiCartelle = new string[] { "files" };
         private static readonly string[] percorsiFile = new string[] { "files/sistemi_riscaldamento.json", "files/bollette.json" };
         private static List<SistemaRiscaldamento> SistemiRiscaldamento;
         private static List<Bolletta> Bollette;
 
+        //Metodi
+
+        /**
+         * @fn static void Main()
+         * @brief Il metodo Main viene eseguito all'avvio del programma e contiene i riferimenti agli altri metodi di visualizzazione presenti nella classe Program
+        **/
+        
         static void Main()
         {
             MostraIntestazione(true);
@@ -55,8 +68,13 @@ namespace prova_ingresso_2022
                     Esci();
                     break;
             }
-            RitornoMenu();
+            RitornoMenuPrincipale();
         }
+
+        /**
+         * @fn static private void OperazioniIniziali()
+         * @brief Il metodo OperazioniIniziali esegue l'estrazione da parte dei file dei dati utili per svolgere le funzioni previste dal programma.
+        **/
 
         static private void OperazioniIniziali()
         {
@@ -85,6 +103,12 @@ namespace prova_ingresso_2022
             }
         }
 
+        /**
+         * @fn static private void MostraIntestazione(bool avvioSoftware)
+         * @param bool avvioSoftware: Questa variabile permette al metodo di stabilire se l'intestazione deve essere mostrata all'avvio del programma o meno.
+         * @brief Il metodo MostraIntestazione mostra il logo del programma, nonché una scritta di benvenuto se si tratta del momento in cui il programma viene avviato.
+        **/
+
         static private void MostraIntestazione(bool avvioSoftware)
         {
             Console.Clear();
@@ -98,17 +122,27 @@ namespace prova_ingresso_2022
             }
         }
 
+        /**
+         * @fn static private int MostraMenu()
+         * @brief Il metodo MostraMenu permette di mostrare il menu principale del programma.
+        **/
+
         static private int MostraMenu()
         {
-            for (int i = 0; i < opzioniMenu.Length; i++)
+            for (int i = 0; i < opzioniMenuPrincipale.Length; i++)
             {
-                Console.WriteLine($"{i + 1}) {opzioniMenu[i]}");
+                Console.WriteLine($"{i + 1}) {opzioniMenuPrincipale[i]}");
             }
-            int scelta = ControlloMenu(opzioniMenu.Length);
+            int scelta = ControlloMenu(opzioniMenuPrincipale.Length);
             Console.Clear();
             MostraIntestazione(false);
             return scelta;
         }
+
+        /**
+         * @fn static private void SchermataNuovoSistemaRiscaldamento()
+         * @brief Il metodo SchermataNuovoSistemaRiscaldamento esegue la raccolta di informazioni di un sistema di riscaldamento, per poi inoltrarle ai metodi di altre classi per eseguirne il salvataggio.
+        **/
 
         static private void SchermataNuovoSistemaRiscaldamento()
         {
@@ -122,6 +156,11 @@ namespace prova_ingresso_2022
             Console.WriteLine(operazioniFile.ScriviFile(percorsiFile[0], JsonConvert.SerializeObject(SistemiRiscaldamento)));
         }
 
+        /**
+         * @fn static private void SchermataNuovaBolletta()
+         * @brief Il metodo SchermataNuovaBolletta esegue la raccolta di informazioni di una bolletta, per poi inoltrarle ai metodi di altre classi per eseguirne il salvataggio.
+        **/
+
         static private void SchermataNuovaBolletta()
         {
             Console.WriteLine(intestazioniFunzioni[0]);
@@ -134,6 +173,11 @@ namespace prova_ingresso_2022
             Console.WriteLine(operazioniFile.ScriviFile(percorsiFile[1], JsonConvert.SerializeObject(Bollette)));
         }
 
+        /**
+         * @fn static private void SchermataMostraSistemiRiscaldamento()
+         * @brief Il metodo SchermataMostraSistemiRiscaldamento esegue la visualizzazione di tutti i sistemi di riscaldamento salvati.
+        **/
+
         static private void SchermataMostraSistemiRiscaldamento()
         {
             Console.WriteLine(intestazioniFunzioni[1]);
@@ -143,6 +187,11 @@ namespace prova_ingresso_2022
                 Console.WriteLine($"{i + 1}) {sistemaRiscaldamento.ToString()}");
             }
         }
+
+        /**
+         * @fn static private void SchermataMostraBollette()
+         * @brief Il metodo SchermataMostraBollette esegue la visualizzazione di tutte le bollette salvate.
+        **/
 
         static private void SchermataMostraBollette()
         {
@@ -154,6 +203,12 @@ namespace prova_ingresso_2022
             }
         }
 
+        /**
+         * @fn static private void MiglioreSistemaRiscaldamento()
+         * @brief Il metodo MiglioreSistemaRiscaldamento effettua la parte di richiesta verso l'utente dei suoi consumi in base alla fonte di riscaldamento attuale che possiede,
+         *        \n per poi andare ad eseguire alcuni semplici calcoli per determinare il migliore sistema di riscaldamento in base ai suoi consumi.
+        **/
+
         static private void MiglioreSistemaRiscaldamento()
         {
             Console.WriteLine(intestazioniFunzioni[0]);
@@ -163,7 +218,7 @@ namespace prova_ingresso_2022
                 Console.WriteLine($"{i + 1}) {SistemiRiscaldamento[i].GetNome()}, del tipo {SistemiRiscaldamento[i].GetTipo()} ");
             }
             int indiceFonteRiscaldamento = 0;
-            switch (SistemiRiscaldamento[ControlloMenu(SistemiRiscaldamento.Count)].GetFonteRiscaldamento())
+            switch (SistemiRiscaldamento[ControlloMenu(SistemiRiscaldamento.Count)-1].GetFonteRiscaldamento())
             {
                 case "Energia elettrica":
                     Console.WriteLine("Inserisci il tuo consumo annuo di energia elettrica:");
@@ -211,6 +266,11 @@ namespace prova_ingresso_2022
                               $"\nIl sistema di riscaldamento con il quale spenderesti meno a partire dal secondo anno è: {sistemaRiscaldamentoSecondoAnnoMigliore}");
         }
 
+        /**
+         * @fn static private void SchermataEliminaDati()
+         * @brief Il metodo SchermataEliminaDati chiede all'utente se desidera eliminare o meno tutte le informazioni da egli inserite per poi demandare ad altri metodi di altre classi l'eliminazione vera e propria.
+        **/
+
         static private void SchermataEliminaDati()
         {
             Console.WriteLine(intestazioniFunzioni[3]);
@@ -244,6 +304,13 @@ namespace prova_ingresso_2022
             while (erroreInserimento == true);
         }
 
+        /**
+         * @fn static private string[] InserimentoDati(string[] descrizioniDati)
+         * @param string[] descrizioniDati : contiene le descrizioni dei dati che verranno richiesti dal programma
+         * @brief Il metodo InserimentoDati è pensato per essere utilizzato generalmente quando devono essere richiesti dei dati da inserire all'utente.
+         * @returns string[] datiInseriti : l'array di stringhe inserite dall'utente da tastiera
+        **/
+
         static private string[] InserimentoDati(string[] descrizioniDati)
         {
             string[] datiInseriti = new string[descrizioniDati.Length];
@@ -255,6 +322,13 @@ namespace prova_ingresso_2022
             return datiInseriti;
         }
 
+        /**
+         * @fn static private int ControlloMenu(int n_opzioni)
+         * @param int n_opzioni : indica il numero di opzioni del menu
+         * @brief Il metodo ControlloMenu esegue il controllo che sia stata scelta un opzione esistente dal menu.
+         * @returns int scelta: il numero inserito dall'utente
+        **/
+
         static private int ControlloMenu(int n_opzioni)
         {
             int scelta;
@@ -265,12 +339,10 @@ namespace prova_ingresso_2022
             return scelta;
         }
 
-        static private void RitornoMenu()
-        {
-            Console.WriteLine("\nPremi un tasto qualsiasi per per tornare al menu principale...");
-            Console.ReadKey();
-            Main();
-        }
+        /**
+         * @fn static private void Esci()
+         * @brief La funzione Esci permette di uscire dal programma, dopo essere stato richiamato dall'apposita opzione nel menu principale.
+        **/
 
         static private void Esci()
         {
@@ -278,6 +350,18 @@ namespace prova_ingresso_2022
             Console.ReadKey();
             Console.Clear();
             Environment.Exit(0);
+        }
+
+        /**
+         * @fn static private void RitornoMenuPrincipale()
+         * @brief Il metodo RitornoMenuPrincipale avvisa l'utente e richiama il Main per riportare il programma allo stato di avvio.
+        **/
+
+        static private void RitornoMenuPrincipale()
+        {
+            Console.WriteLine("\nPremi un tasto qualsiasi per per tornare al menu principale...");
+            Console.ReadKey();
+            Main();
         }
     }
 }

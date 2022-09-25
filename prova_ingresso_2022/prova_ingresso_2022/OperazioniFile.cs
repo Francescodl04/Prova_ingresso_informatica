@@ -9,92 +9,132 @@ using System.IO;
 
 namespace prova_ingresso_2022
 {
+    /**
+     * @class OperazioniFile
+     * @brief Classe che esegue le operazioni inerenti ai file.
+    **/
+    
     class OperazioniFile
     {
+        //Attributi 
         string messaggioOutput = "Salvataggio delle modifiche completato con successo!";
+
         //Metodi
 
-        //Metodo costruttore.
+        /**
+         * @fn public OperazioniFile()
+         * @brief Metodo costruttore.
+        **/
         public OperazioniFile()
         {
 
         }
 
-        //Metodo che permette di eseguire la creazione di una cartella (directory).
-        public string CreaCartella(string percorsoIO) //Il metodo accetta come argomento il percorso del file e restituisce un messaggio per indicare se ci sono state delle eccezioni o meno.
+        /**
+         * @fn public string CreaCartella(string percorsoIO)
+         * @param string percorsoIO : indica il percorso del file.
+         * @brief Il metodo CreaCartella permette di eseguire la creazione di una cartella (directory), catturandone le eccezioni.
+         * @returns string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno.
+        **/
+
+        public string CreaCartella(string percorsoIO)
         {
-            try //Prova a eseguire le istruzioni.
+            try 
             {
-                Directory.CreateDirectory(percorsoIO); //Metodo che esegue la creazione di una directory al percorso specificato.
+                Directory.CreateDirectory(percorsoIO); 
             }
-            catch (UnauthorizedAccessException) //Rileva l'eccezione che non autorizza l'accesso al file.
+            catch (UnauthorizedAccessException)
             {
-                messaggioOutput = GestisciErrori(0);
+                messaggioOutput = MessaggiErrore(0);
             }
-            catch (IOException) //Rileva l'eccezione che indica un errore di IO.
+            catch (IOException)
             {
-                messaggioOutput = GestisciErrori(1);
+                messaggioOutput = MessaggiErrore(1);
             }
             return messaggioOutput;
         }
 
-        //Metodo che permette di eseguire la lettura di un file.
-        public string LeggiFile(string percorsoIO) //Il metodo accetta come argomento il percorso del file e restituisce il contenuto del file letto oppute messaggio per indicare se ci sono state delle eccezioni.
+        /**
+         * @fn public string LeggiFile(string percorsoIO)
+         * @param string percorsoIO : indica il percorso del file.
+         * @brief Il metodo LeggiFile permette di eseguire la lettura di un file, catturandone le eccezioni.
+         * @returns string contenutoInput : contiene il contenuto letto del file, oppure può indicare se ci sono state eccezioni nell'esecuzione delle operazioni.
+        **/
+
+        public string LeggiFile(string percorsoIO)
         {
             string contenutoInput;
-            try //Prova a eseguire le istruzioni.
+            try
             {
-                contenutoInput = File.ReadAllText(percorsoIO); //Metodo che esegue la lettura di tutto il testo di un file al percorso specificato e restituisce la stringa del testo letto.
+                contenutoInput = File.ReadAllText(percorsoIO);
             }
-            catch (UnauthorizedAccessException) //Rileva l'eccezione che non autorizza l'accesso al file.
+            catch (UnauthorizedAccessException)
             {
-                contenutoInput = GestisciErrori(0);
+                contenutoInput = MessaggiErrore(0);
             }
-            catch (IOException) //Rileva l'eccezione che indica un errore di IO.
+            catch (IOException)
             {
-                contenutoInput = GestisciErrori(1);
+                contenutoInput = MessaggiErrore(1);
             }
             return contenutoInput;
         }
 
-        //Metodo che permette di eseguire la scrittura di un file.
-        public string ScriviFile(string percorsoIO, string contenutoOutput) //Il metodo accetta come argomenti il percorso del file e il contenuto che dovrà essere scritto su file e restituisce un messaggio per indicare se ci sono state delle eccezioni o meno.
+        /**
+         * @fn public string ScriviFile(string percorsoIO, string contenutoOutput)
+         * @param string percorsoIO : indica il percorso del file.
+         * @param string contenutoOutput : è il contenuto da scrivere sul file.
+         * @brief Il metodo ScriviFile permette di eseguire la scrittura su file, catturandone le eccezioni.
+         * @returns string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno.
+        **/
+
+        public string ScriviFile(string percorsoIO, string contenutoOutput) 
         {
-            try //Prova a eseguire le istruzioni.
+            try 
             {
-                File.WriteAllText(percorsoIO, contenutoOutput); //Metodo che esegue la scrittura di un file al percorso specificato (se il percorso non esiste, allora crea il file) e inserisce l'intero contenuto di una stringa.
+                File.WriteAllText(percorsoIO, contenutoOutput); 
             }
-            catch (UnauthorizedAccessException) //Rileva l'eccezione che non autorizza l'accesso al file.
+            catch (UnauthorizedAccessException)
             {
-                messaggioOutput = GestisciErrori(0);
+                messaggioOutput = MessaggiErrore(0);
             }
-            catch (IOException) //Rileva l'eccezione che indica un errore di IO.
+            catch (IOException)
             {
-                messaggioOutput = GestisciErrori(1);
+                messaggioOutput = MessaggiErrore(1);
             }
             return messaggioOutput;
         }
 
-        //Metodo che permette di eseguire la cancellazione di un file.
-        public string EliminaFile(string percorsoIO) //Il metodo accetta come argomento il percorso del file e restituisce un messaggio per indicare se ci sono state delle eccezioni o meno.
+        /**
+         * @fn public string EliminaFile(string percorsoIO)
+         * @param string percorsoIO : indica il percorso del file.
+         * @brief Il metodo EliminaFile permette di eseguire l'eliminazione di un file, catturandone le eccezioni.
+         * @returns string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno.
+        **/
+
+        public string EliminaFile(string percorsoIO)
         {
-            try //Prova a eseguire le istruzioni.
+            try
             {
-                File.Delete(percorsoIO); //Metodo che esegue l'eliminazione del file al percorso specificato.
+                File.Delete(percorsoIO);
             }
-            catch (UnauthorizedAccessException) //Rileva l'eccezione che non autorizza l'accesso al file.
+            catch (UnauthorizedAccessException)
             {
-                messaggioOutput = GestisciErrori(0);
+                messaggioOutput = MessaggiErrore(0);
             }
-            catch (IOException) //Rileva l'eccezione che indica un errore di IO.
+            catch (IOException)
             {
-                messaggioOutput = GestisciErrori(1);
+                messaggioOutput = MessaggiErrore(1);
             }
             return messaggioOutput;
         }
 
-        //Metodo che permette di gestire le eccezioni derivanti dai metodi soprastanti.
-        public string GestisciErrori(int codiceErrore) //Il metodo accetta come argomento il codice dell'errore che si è verificato nei metodi.
+        /**
+         * @fn public string MessaggiErrore(int codiceErrore)
+         * @param int codiceErrore : indica il codice assegnato all'eccezione dagli altri metodi.
+         * @brief Il metodo MessaggiErrore ritorna i messaggi di errore in seguito al catturamento delle eccezioni.
+         * @returns string : i messaggi di errore.
+        **/
+        public string MessaggiErrore(int codiceErrore) //Il metodo accetta come argomento il codice dell'errore che si è verificato nei metodi.
         {
             switch (codiceErrore) //In base al valore che assume la variabile, si possono presentare diversi casi.
             {

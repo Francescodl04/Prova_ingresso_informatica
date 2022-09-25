@@ -1,0 +1,199 @@
+\hypertarget{classprova__ingresso__2022_1_1_bolletta}{}\doxysection{prova\+\_\+ingresso\+\_\+2022.\+Bolletta Class Reference}
+\label{classprova__ingresso__2022_1_1_bolletta}\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+
+
+La classe \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} rappresenta i costi annuali dell\textquotesingle{}energia. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a3e39169d32ce113b43dfda1a9217a4bb}{Bolletta}} (string \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a1bea9025b5d7db3c86e816c68cf4bff5}{tipo\+Materia}}, double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a8060afad0556b4229f3903257aaf50f1}{spesa\+Materia}}, double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_ac7a123c9eb107c2d7eecaa33aa9162dc}{spesa\+Trasporto\+Gestione\+Contatore}}, double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a314c33ca9966ace1a67fdf9a9b357180}{oneri\+Sistema}}, double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_ad52104c603467b755967637d792ee533}{QVD}})
+\begin{DoxyCompactList}\small\item\em Metodo costruttore della classe. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a40ab43a7823150b867f3a35ac5ffb0f2}{Get\+Tipo\+Materia}} ()
+\begin{DoxyCompactList}\small\item\em Accesso alla variabile che ritorna il metodo. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a9c745da7aa1d7dbf648bd0c1dce8fc63}{Get\+Spesa\+Materia}} ()
+\begin{DoxyCompactList}\small\item\em Accesso alla variabile che ritorna il metodo. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_aeb5ec86bdf301c55efcfe3ead5a8b0af}{Get\+Spesa\+Trasporto\+Gestione\+Contatore}} ()
+\begin{DoxyCompactList}\small\item\em Accesso alla variabile che ritorna il metodo. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_ac14f455e76c165f34fbeab21ba4affad}{Get\+Oneri\+Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Metodo di accesso alla variabile che ritorna. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_af88887a87c8d5b4e64f0a6f1b1a649a5}{Get\+QVD}} ()
+\begin{DoxyCompactList}\small\item\em Metodo di accesso alla variabile che ritorna. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} $>$ \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a12de74b3e6c20a79ac19f6e5dde07e81}{Nuova\+Bolletta}} (List$<$ \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} $>$ bollette)
+\begin{DoxyCompactList}\small\item\em Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell\textquotesingle{}utente. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_af0539710755ab033496a38ce244ac931}{Calcolo\+Costo\+Bolletta}} (double consumo, double rendimento)
+\item 
+override string \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a2cccb54e2e8728c6f811738620c64634}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a1bea9025b5d7db3c86e816c68cf4bff5}{tipo\+Materia}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a8060afad0556b4229f3903257aaf50f1}{spesa\+Materia}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_ac7a123c9eb107c2d7eecaa33aa9162dc}{spesa\+Trasporto\+Gestione\+Contatore}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_a314c33ca9966ace1a67fdf9a9b357180}{oneri\+Sistema}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+double \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta_ad52104c603467b755967637d792ee533}{QVD}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} rappresenta i costi annuali dell\textquotesingle{}energia. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a3e39169d32ce113b43dfda1a9217a4bb}\label{classprova__ingresso__2022_1_1_bolletta_a3e39169d32ce113b43dfda1a9217a4bb}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!Bolletta@{Bolletta}}
+\index{Bolletta@{Bolletta}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{Bolletta()}{Bolletta()}}
+{\footnotesize\ttfamily public prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Bolletta (\begin{DoxyParamCaption}\item[{string}]{tipo\+Materia,  }\item[{double}]{spesa\+Materia,  }\item[{double}]{spesa\+Trasporto\+Gestione\+Contatore,  }\item[{double}]{oneri\+Sistema,  }\item[{double}]{QVD }\end{DoxyParamCaption})}
+
+
+
+Metodo costruttore della classe. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_af0539710755ab033496a38ce244ac931}\label{classprova__ingresso__2022_1_1_bolletta_af0539710755ab033496a38ce244ac931}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!CalcoloCostoBolletta@{CalcoloCostoBolletta}}
+\index{CalcoloCostoBolletta@{CalcoloCostoBolletta}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{CalcoloCostoBolletta()}{CalcoloCostoBolletta()}}
+{\footnotesize\ttfamily public double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Calcolo\+Costo\+Bolletta (\begin{DoxyParamCaption}\item[{double}]{consumo,  }\item[{double}]{rendimento }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_ac14f455e76c165f34fbeab21ba4affad}\label{classprova__ingresso__2022_1_1_bolletta_ac14f455e76c165f34fbeab21ba4affad}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!GetOneriSistema@{GetOneriSistema}}
+\index{GetOneriSistema@{GetOneriSistema}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{GetOneriSistema()}{GetOneriSistema()}}
+{\footnotesize\ttfamily public double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Get\+Oneri\+Sistema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo di accesso alla variabile che ritorna. 
+
+\begin{DoxyReturn}{Returns}
+double oneri\+Sistema 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_af88887a87c8d5b4e64f0a6f1b1a649a5}\label{classprova__ingresso__2022_1_1_bolletta_af88887a87c8d5b4e64f0a6f1b1a649a5}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!GetQVD@{GetQVD}}
+\index{GetQVD@{GetQVD}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{GetQVD()}{GetQVD()}}
+{\footnotesize\ttfamily public double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Get\+QVD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo di accesso alla variabile che ritorna. 
+
+\begin{DoxyReturn}{Returns}
+double QVD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a9c745da7aa1d7dbf648bd0c1dce8fc63}\label{classprova__ingresso__2022_1_1_bolletta_a9c745da7aa1d7dbf648bd0c1dce8fc63}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!GetSpesaMateria@{GetSpesaMateria}}
+\index{GetSpesaMateria@{GetSpesaMateria}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{GetSpesaMateria()}{GetSpesaMateria()}}
+{\footnotesize\ttfamily public double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Get\+Spesa\+Materia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesso alla variabile che ritorna il metodo. 
+
+\begin{DoxyReturn}{Returns}
+double spesa\+Materia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_aeb5ec86bdf301c55efcfe3ead5a8b0af}\label{classprova__ingresso__2022_1_1_bolletta_aeb5ec86bdf301c55efcfe3ead5a8b0af}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!GetSpesaTrasportoGestioneContatore@{GetSpesaTrasportoGestioneContatore}}
+\index{GetSpesaTrasportoGestioneContatore@{GetSpesaTrasportoGestioneContatore}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{GetSpesaTrasportoGestioneContatore()}{GetSpesaTrasportoGestioneContatore()}}
+{\footnotesize\ttfamily public double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Get\+Spesa\+Trasporto\+Gestione\+Contatore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesso alla variabile che ritorna il metodo. 
+
+\begin{DoxyReturn}{Returns}
+double spesa\+Trasporto\+Gestione\+Contatore 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a40ab43a7823150b867f3a35ac5ffb0f2}\label{classprova__ingresso__2022_1_1_bolletta_a40ab43a7823150b867f3a35ac5ffb0f2}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!GetTipoMateria@{GetTipoMateria}}
+\index{GetTipoMateria@{GetTipoMateria}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{GetTipoMateria()}{GetTipoMateria()}}
+{\footnotesize\ttfamily public string prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Get\+Tipo\+Materia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesso alla variabile che ritorna il metodo. 
+
+\begin{DoxyReturn}{Returns}
+string tipo\+Materia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a12de74b3e6c20a79ac19f6e5dde07e81}\label{classprova__ingresso__2022_1_1_bolletta_a12de74b3e6c20a79ac19f6e5dde07e81}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!NuovaBolletta@{NuovaBolletta}}
+\index{NuovaBolletta@{NuovaBolletta}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{NuovaBolletta()}{NuovaBolletta()}}
+{\footnotesize\ttfamily public List$<$ \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} $>$ prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+Nuova\+Bolletta (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classprova__ingresso__2022_1_1_bolletta}{Bolletta}} $>$}]{bollette }\end{DoxyParamCaption})}
+
+
+
+Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell\textquotesingle{}utente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List$<$\+Bolletta$>$} & bollette\+: la lista su cui inserire le nuove bollette \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List$<$\+Bolletta$>$ bollette 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a2cccb54e2e8728c6f811738620c64634}\label{classprova__ingresso__2022_1_1_bolletta_a2cccb54e2e8728c6f811738620c64634}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!ToString@{ToString}}
+\index{ToString@{ToString}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily public override string prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string \+: ritorna la stringa composta dalle caratteristiche della bolletta a cui si fa riferimento nell\textquotesingle{}istanza della classe. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a314c33ca9966ace1a67fdf9a9b357180}\label{classprova__ingresso__2022_1_1_bolletta_a314c33ca9966ace1a67fdf9a9b357180}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!oneriSistema@{oneriSistema}}
+\index{oneriSistema@{oneriSistema}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{oneriSistema}{oneriSistema}}
+{\footnotesize\ttfamily double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+oneri\+Sistema\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_ad52104c603467b755967637d792ee533}\label{classprova__ingresso__2022_1_1_bolletta_ad52104c603467b755967637d792ee533}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!QVD@{QVD}}
+\index{QVD@{QVD}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{QVD}{QVD}}
+{\footnotesize\ttfamily double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+QVD\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a8060afad0556b4229f3903257aaf50f1}\label{classprova__ingresso__2022_1_1_bolletta_a8060afad0556b4229f3903257aaf50f1}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!spesaMateria@{spesaMateria}}
+\index{spesaMateria@{spesaMateria}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{spesaMateria}{spesaMateria}}
+{\footnotesize\ttfamily double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+spesa\+Materia\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_ac7a123c9eb107c2d7eecaa33aa9162dc}\label{classprova__ingresso__2022_1_1_bolletta_ac7a123c9eb107c2d7eecaa33aa9162dc}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!spesaTrasportoGestioneContatore@{spesaTrasportoGestioneContatore}}
+\index{spesaTrasportoGestioneContatore@{spesaTrasportoGestioneContatore}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{spesaTrasportoGestioneContatore}{spesaTrasportoGestioneContatore}}
+{\footnotesize\ttfamily double prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+spesa\+Trasporto\+Gestione\+Contatore\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprova__ingresso__2022_1_1_bolletta_a1bea9025b5d7db3c86e816c68cf4bff5}\label{classprova__ingresso__2022_1_1_bolletta_a1bea9025b5d7db3c86e816c68cf4bff5}} 
+\index{prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}!tipoMateria@{tipoMateria}}
+\index{tipoMateria@{tipoMateria}!prova\_ingresso\_2022.Bolletta@{prova\_ingresso\_2022.Bolletta}}
+\doxysubsubsection{\texorpdfstring{tipoMateria}{tipoMateria}}
+{\footnotesize\ttfamily string prova\+\_\+ingresso\+\_\+2022.\+Bolletta.\+tipo\+Materia\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Scuola/\+Secondaria di Secondo Grado/\+V F A.\+S. 2022-\/2023/\+Informatica/\+Prova\+\_\+ingresso\+\_\+informatica/prova\+\_\+ingresso\+\_\+2022/prova\+\_\+ingresso\+\_\+2022/\mbox{\hyperlink{_bolletta_8cs}{Bolletta.\+cs}}\end{DoxyCompactItemize}
