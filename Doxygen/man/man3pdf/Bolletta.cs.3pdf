@@ -1,0 +1,26 @@
+.TH "D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-2023/Informatica/Prova_ingresso_informatica/prova_ingresso_2022/prova_ingresso_2022/Bolletta.cs" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-2023/Informatica/Prova_ingresso_informatica/prova_ingresso_2022/prova_ingresso_2022/Bolletta.cs
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBprova_ingresso_2022\&.Bolletta\fP"
+.br
+.RI "La classe \fBBolletta\fP rappresenta i costi annuali dell'energia\&. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON\&. "
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBprova_ingresso_2022\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.

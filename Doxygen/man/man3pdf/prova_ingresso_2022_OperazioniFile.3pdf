@@ -1,0 +1,134 @@
+.TH "prova_ingresso_2022.OperazioniFile" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+prova_ingresso_2022.OperazioniFile \- Classe che esegue le operazioni inerenti ai file\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOperazioniFile\fP ()"
+.br
+.RI "Metodo costruttore\&. "
+.ti -1c
+.RI "string \fBCreaCartella\fP (string percorsoIO)"
+.br
+.RI "Il metodo CreaCartella permette di eseguire la creazione di una cartella (directory), catturandone le eccezioni\&. "
+.ti -1c
+.RI "string \fBLeggiFile\fP (string percorsoIO)"
+.br
+.RI "Il metodo LeggiFile permette di eseguire la lettura di un file, catturandone le eccezioni\&. "
+.ti -1c
+.RI "string \fBScriviFile\fP (string percorsoIO, string contenutoOutput)"
+.br
+.RI "Il metodo ScriviFile permette di eseguire la scrittura su file, catturandone le eccezioni\&. "
+.ti -1c
+.RI "string \fBEliminaFile\fP (string percorsoIO)"
+.br
+.RI "Il metodo EliminaFile permette di eseguire l'eliminazione di un file, catturandone le eccezioni\&. "
+.ti -1c
+.RI "string \fBMessaggiErrore\fP (int codiceErrore)"
+.br
+.RI "Il metodo MessaggiErrore ritorna i messaggi di errore in seguito al catturamento delle eccezioni\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Classe che esegue le operazioni inerenti ai file\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "public prova_ingresso_2022\&.OperazioniFile\&.OperazioniFile ()"
+
+.PP
+Metodo costruttore\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "public string prova_ingresso_2022\&.OperazioniFile\&.CreaCartella (string percorsoIO)"
+
+.PP
+Il metodo CreaCartella permette di eseguire la creazione di una cartella (directory), catturandone le eccezioni\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP percorsoIO : indica il percorso del file\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno\&. 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.OperazioniFile\&.EliminaFile (string percorsoIO)"
+
+.PP
+Il metodo EliminaFile permette di eseguire l'eliminazione di un file, catturandone le eccezioni\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP percorsoIO : indica il percorso del file\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno\&. 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.OperazioniFile\&.LeggiFile (string percorsoIO)"
+
+.PP
+Il metodo LeggiFile permette di eseguire la lettura di un file, catturandone le eccezioni\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP percorsoIO : indica il percorso del file\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string contenutoInput : contiene il contenuto letto del file, oppure può indicare se ci sono state eccezioni nell'esecuzione delle operazioni\&. 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.OperazioniFile\&.MessaggiErrore (int codiceErrore)"
+
+.PP
+Il metodo MessaggiErrore ritorna i messaggi di errore in seguito al catturamento delle eccezioni\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIint\fP codiceErrore : indica il codice assegnato all'eccezione dagli altri metodi\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string : i messaggi di errore\&. 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.OperazioniFile\&.ScriviFile (string percorsoIO, string contenutoOutput)"
+
+.PP
+Il metodo ScriviFile permette di eseguire la scrittura su file, catturandone le eccezioni\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP percorsoIO : indica il percorso del file\&. 
+.br
+\fIstring\fP contenutoOutput : è il contenuto da scrivere sul file\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string messaggioOutput : indica se ci sono state eccezioni nell'esecuzione delle operazioni o meno\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.

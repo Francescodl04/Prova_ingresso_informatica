@@ -1,0 +1,182 @@
+\begin{theindex}
+
+  \item {Bolletta}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{10}
+
+  \indexspace
+
+  \item {CalcoloCostoBolletta}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{10}
+  \item {costoInstallazione}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+  \item {costoMacchina}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+  \item {CreaCartella}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{13}
+
+  \indexspace
+
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/Bolletta.cs}, 
+		\hyperpage{21}
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs}, 
+		\hyperpage{21}
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/obj/Debug/net5.0/prova\_ingresso\_2022.AssemblyInfo.cs}, 
+		\hyperpage{21}
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/OperazioniFile.cs}, 
+		\hyperpage{21}
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/Program.cs}, 
+		\hyperpage{22}
+  \item {D:/Scuola/Secondaria di Secondo Grado/V F A.S. 2022-\/2023/Informatica/Prova\_ingresso\_informatica/prova\_ingresso\_2022/prova\_ingresso\_2022/SistemaRiscaldamento.cs}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {EliminaFile}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{14}
+
+  \indexspace
+
+  \item {fonteRiscaldamento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {GetCostoInstallazione}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{17}
+  \item {GetCostoMacchina}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{17}
+  \item {GetFonteRiscaldamento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{17}
+  \item {GetNome}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{17}
+  \item {GetOneriSistema}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{10}
+  \item {GetQVD}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{10}
+  \item {GetRendimento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{18}
+  \item {GetSpesaMateria}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{11}
+  \item {GetSpesaTrasportoGestioneContatore}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{11}
+  \item {GetTipo}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{18}
+  \item {GetTipoMateria}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{11}
+
+  \indexspace
+
+  \item {LeggiFile}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{14}
+
+  \indexspace
+
+  \item {MessaggiErrore}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{14}
+
+  \indexspace
+
+  \item {nome}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+  \item {NuovaBolletta}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{11}
+  \item {NuovoSistemaRiscaldamento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {oneriSistema}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+  \item {OperazioniFile}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{13}
+
+  \indexspace
+
+  \item {prova\_ingresso\_2022}, \hyperpage{7}
+  \item {prova\_ingresso\_2022.Bolletta}, \hyperpage{9}
+    \subitem {Bolletta}, \hyperpage{10}
+    \subitem {CalcoloCostoBolletta}, \hyperpage{10}
+    \subitem {GetOneriSistema}, \hyperpage{10}
+    \subitem {GetQVD}, \hyperpage{10}
+    \subitem {GetSpesaMateria}, \hyperpage{11}
+    \subitem {GetSpesaTrasportoGestioneContatore}, \hyperpage{11}
+    \subitem {GetTipoMateria}, \hyperpage{11}
+    \subitem {NuovaBolletta}, \hyperpage{11}
+    \subitem {oneriSistema}, \hyperpage{12}
+    \subitem {QVD}, \hyperpage{12}
+    \subitem {spesaMateria}, \hyperpage{12}
+    \subitem {spesaTrasportoGestioneContatore}, \hyperpage{12}
+    \subitem {tipoMateria}, \hyperpage{12}
+    \subitem {ToString}, \hyperpage{12}
+  \item {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{13}
+    \subitem {CreaCartella}, \hyperpage{13}
+    \subitem {EliminaFile}, \hyperpage{14}
+    \subitem {LeggiFile}, \hyperpage{14}
+    \subitem {MessaggiErrore}, \hyperpage{14}
+    \subitem {OperazioniFile}, \hyperpage{13}
+    \subitem {ScriviFile}, \hyperpage{15}
+  \item {prova\_ingresso\_2022.Program}, \hyperpage{15}
+  \item {prova\_ingresso\_2022.SistemaRiscaldamento}, \hyperpage{16}
+    \subitem {costoInstallazione}, \hyperpage{19}
+    \subitem {costoMacchina}, \hyperpage{19}
+    \subitem {fonteRiscaldamento}, \hyperpage{19}
+    \subitem {GetCostoInstallazione}, \hyperpage{17}
+    \subitem {GetCostoMacchina}, \hyperpage{17}
+    \subitem {GetFonteRiscaldamento}, \hyperpage{17}
+    \subitem {GetNome}, \hyperpage{17}
+    \subitem {GetRendimento}, \hyperpage{18}
+    \subitem {GetTipo}, \hyperpage{18}
+    \subitem {nome}, \hyperpage{19}
+    \subitem {NuovoSistemaRiscaldamento}, \hyperpage{18}
+    \subitem {rendimento}, \hyperpage{19}
+    \subitem {SistemaRiscaldamento}, \hyperpage{16}
+    \subitem {tipo}, \hyperpage{19}
+    \subitem {ToString}, \hyperpage{19}
+
+  \indexspace
+
+  \item {QVD}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+
+  \indexspace
+
+  \item {rendimento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {ScriviFile}
+    \subitem {prova\_ingresso\_2022.OperazioniFile}, \hyperpage{15}
+  \item {SistemaRiscaldamento}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{16}
+  \item {spesaMateria}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+  \item {spesaTrasportoGestioneContatore}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+
+  \indexspace
+
+  \item {tipo}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+  \item {tipoMateria}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+  \item {ToString}
+    \subitem {prova\_ingresso\_2022.Bolletta}, \hyperpage{12}
+    \subitem {prova\_ingresso\_2022.SistemaRiscaldamento}, 
+		\hyperpage{19}
+
+\end{theindex}

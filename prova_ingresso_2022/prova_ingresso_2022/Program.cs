@@ -229,24 +229,18 @@ namespace prova_ingresso_2022
                     indiceFonteRiscaldamento = 1;
                     break;
             }
-            double consumoReale = double.Parse(Console.ReadLine());
+            double consumo = double.Parse(Console.ReadLine());
             MostraIntestazione(false);
             Console.WriteLine("NOTA: nella bolletta dei sistemi con una fonte di riscaldamento diversa da quella che già possiedi\nla spesa per la materia verrà calcolata attraverso un valore di consumo di una famiglia media,\nmentre gli altri con i valori reali da te inseriti.\n");
             double costoBollettaPrimoAnnoMinore=0, costoBollettaSecondoAnnoMinore=0;
             string sistemaRiscaldamentoPrimoAnnoMigliore = "", sistemaRiscaldamentoSecondoAnnoMigliore = "";
             for (int i = 0; i < SistemiRiscaldamento.Count; i++)
             {
-                double[] consumoMedio = new double[] { 2700, 1300 };
-                double consumo, costoBollettaPrimoAnno, costoBollettaSecondoAnno;
-                if (SistemiRiscaldamento[i].GetFonteRiscaldamento() != Bollette[indiceFonteRiscaldamento].GetTipoMateria())
+                double costoBollettaPrimoAnno, costoBollettaSecondoAnno;
+                if (SistemiRiscaldamento[i].GetFonteRiscaldamento() != Bollette[indiceFonteRiscaldamento].GetTipoMateria() && indiceFonteRiscaldamento == 1)
                 {
-                    consumo = consumoMedio[indiceFonteRiscaldamento];
+                    consumo *= 10.7;
                 }
-                else
-                {
-                    consumo = consumoReale;
-                }
-                SistemaRiscaldamento sistemaRiscaldamento = new SistemaRiscaldamento(SistemiRiscaldamento[0].GetNome(), SistemiRiscaldamento[0].GetTipo(), SistemiRiscaldamento[0].GetRendimento(), SistemiRiscaldamento[0].GetCostoMacchina(), SistemiRiscaldamento[0].GetCostoInstallazione(), SistemiRiscaldamento[0].GetFonteRiscaldamento());
                 Bolletta bolletta = new Bolletta(Bollette[indiceFonteRiscaldamento].GetTipoMateria(), Bollette[indiceFonteRiscaldamento].GetSpesaMateria(), Bollette[indiceFonteRiscaldamento].GetSpesaTrasportoGestioneContatore(), Bollette[indiceFonteRiscaldamento].GetOneriSistema(), Bollette[indiceFonteRiscaldamento].GetQVD());
                 Console.WriteLine($"{i + 1}) {SistemiRiscaldamento[i].GetNome()}, del tipo {SistemiRiscaldamento[i].GetTipo()} \n" +
                                   $"   --> Bolletta primo anno: {costoBollettaPrimoAnno = bolletta.CalcoloCostoBolletta(consumo, SistemiRiscaldamento[i].GetRendimento()) + SistemiRiscaldamento[i].GetCostoMacchina() + SistemiRiscaldamento[i].GetCostoInstallazione()} euro\n" +

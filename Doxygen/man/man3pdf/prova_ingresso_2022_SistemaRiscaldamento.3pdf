@@ -1,0 +1,190 @@
+.TH "prova_ingresso_2022.SistemaRiscaldamento" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+prova_ingresso_2022.SistemaRiscaldamento \- La classe \fBSistemaRiscaldamento\fP rappresenta il sistema di riscaldamento\&. Contiene i metodi per ottenere le informazioni sul riscaldamento, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio dei sistemi di riscaldamento in JSON\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSistemaRiscaldamento\fP (string \fBnome\fP, string \fBtipo\fP, double \fBrendimento\fP, double \fBcostoMacchina\fP, double \fBcostoInstallazione\fP, string \fBfonteRiscaldamento\fP)"
+.br
+.RI "Metodo costruttore\&. "
+.ti -1c
+.RI "string \fBGetNome\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "string \fBGetTipo\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetRendimento\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetCostoMacchina\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetCostoInstallazione\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "string \fBGetFonteRiscaldamento\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "List< \fBSistemaRiscaldamento\fP > \fBNuovoSistemaRiscaldamento\fP (List< \fBSistemaRiscaldamento\fP > sistemiRiscaldamento)"
+.br
+.RI "Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell'utente\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBnome\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBtipo\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBrendimento\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBcostoMacchina\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBcostoInstallazione\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBfonteRiscaldamento\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La classe \fBSistemaRiscaldamento\fP rappresenta il sistema di riscaldamento\&. Contiene i metodi per ottenere le informazioni sul riscaldamento, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio dei sistemi di riscaldamento in JSON\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "public prova_ingresso_2022\&.SistemaRiscaldamento\&.SistemaRiscaldamento (string nome, string tipo, double rendimento, double costoMacchina, double costoInstallazione, string fonteRiscaldamento)"
+
+.PP
+Metodo costruttore\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "public double prova_ingresso_2022\&.SistemaRiscaldamento\&.GetCostoInstallazione ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double costoInstallazione 
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.SistemaRiscaldamento\&.GetCostoMacchina ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double costoMacchina 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.SistemaRiscaldamento\&.GetFonteRiscaldamento ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string fonteRiscaldamento 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.SistemaRiscaldamento\&.GetNome ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string nome 
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.SistemaRiscaldamento\&.GetRendimento ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double rendimento 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.SistemaRiscaldamento\&.GetTipo ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string tipo 
+.RE
+.PP
+
+.SS "public List< \fBSistemaRiscaldamento\fP > prova_ingresso_2022\&.SistemaRiscaldamento\&.NuovoSistemaRiscaldamento (List< \fBSistemaRiscaldamento\fP > sistemiRiscaldamento)"
+
+.PP
+Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell'utente\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIList<SistemaRiscaldamento>\fP sistemiRiscaldamento: la lista su cui inserire i nuovi sistemi di riscaldamento 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+List<SistemaRiscaldamento> sistemiRiscaldamento 
+.RE
+.PP
+
+.SS "public override string prova_ingresso_2022\&.SistemaRiscaldamento\&.ToString ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+string : ritorna la stringa composta dalle caratteristiche del sistema di riscaldamento a cui si fa riferimento nell'istanza della classe\&. 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "double prova_ingresso_2022\&.SistemaRiscaldamento\&.costoInstallazione\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "double prova_ingresso_2022\&.SistemaRiscaldamento\&.costoMacchina\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "string prova_ingresso_2022\&.SistemaRiscaldamento\&.fonteRiscaldamento\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "string prova_ingresso_2022\&.SistemaRiscaldamento\&.nome\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "double prova_ingresso_2022\&.SistemaRiscaldamento\&.rendimento\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "string prova_ingresso_2022\&.SistemaRiscaldamento\&.tipo\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.

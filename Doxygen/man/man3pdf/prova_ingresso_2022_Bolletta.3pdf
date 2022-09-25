@@ -1,0 +1,182 @@
+.TH "prova_ingresso_2022.Bolletta" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+prova_ingresso_2022.Bolletta \- La classe \fBBolletta\fP rappresenta i costi annuali dell'energia\&. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBolletta\fP (string \fBtipoMateria\fP, double \fBspesaMateria\fP, double \fBspesaTrasportoGestioneContatore\fP, double \fBoneriSistema\fP, double \fBQVD\fP)"
+.br
+.RI "Metodo costruttore della classe\&. "
+.ti -1c
+.RI "string \fBGetTipoMateria\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetSpesaMateria\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetSpesaTrasportoGestioneContatore\fP ()"
+.br
+.RI "Accesso alla variabile che ritorna il metodo\&. "
+.ti -1c
+.RI "double \fBGetOneriSistema\fP ()"
+.br
+.RI "Metodo di accesso alla variabile che ritorna\&. "
+.ti -1c
+.RI "double \fBGetQVD\fP ()"
+.br
+.RI "Metodo di accesso alla variabile che ritorna\&. "
+.ti -1c
+.RI "List< \fBBolletta\fP > \fBNuovaBolletta\fP (List< \fBBolletta\fP > bollette)"
+.br
+.RI "Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell'utente\&. "
+.ti -1c
+.RI "double \fBCalcoloCostoBolletta\fP (double consumo, double rendimento)"
+.br
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBtipoMateria\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBspesaMateria\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBspesaTrasportoGestioneContatore\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBoneriSistema\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "double \fBQVD\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La classe \fBBolletta\fP rappresenta i costi annuali dell'energia\&. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "public prova_ingresso_2022\&.Bolletta\&.Bolletta (string tipoMateria, double spesaMateria, double spesaTrasportoGestioneContatore, double oneriSistema, double QVD)"
+
+.PP
+Metodo costruttore della classe\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "public double prova_ingresso_2022\&.Bolletta\&.CalcoloCostoBolletta (double consumo, double rendimento)"
+
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.Bolletta\&.GetOneriSistema ()"
+
+.PP
+Metodo di accesso alla variabile che ritorna\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double oneriSistema 
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.Bolletta\&.GetQVD ()"
+
+.PP
+Metodo di accesso alla variabile che ritorna\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double QVD 
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.Bolletta\&.GetSpesaMateria ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double spesaMateria 
+.RE
+.PP
+
+.SS "public double prova_ingresso_2022\&.Bolletta\&.GetSpesaTrasportoGestioneContatore ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+double spesaTrasportoGestioneContatore 
+.RE
+.PP
+
+.SS "public string prova_ingresso_2022\&.Bolletta\&.GetTipoMateria ()"
+
+.PP
+Accesso alla variabile che ritorna il metodo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string tipoMateria 
+.RE
+.PP
+
+.SS "public List< \fBBolletta\fP > prova_ingresso_2022\&.Bolletta\&.NuovaBolletta (List< \fBBolletta\fP > bollette)"
+
+.PP
+Permette di aggiungere nella lista una nuova posizione in cui vengono inseriti i dati immessi da parte dell'utente\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIList<Bolletta>\fP bollette: la lista su cui inserire le nuove bollette 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+List<Bolletta> bollette 
+.RE
+.PP
+
+.SS "public override string prova_ingresso_2022\&.Bolletta\&.ToString ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+string : ritorna la stringa composta dalle caratteristiche della bolletta a cui si fa riferimento nell'istanza della classe\&. 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "double prova_ingresso_2022\&.Bolletta\&.oneriSistema\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "double prova_ingresso_2022\&.Bolletta\&.QVD\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "double prova_ingresso_2022\&.Bolletta\&.spesaMateria\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "double prova_ingresso_2022\&.Bolletta\&.spesaTrasportoGestioneContatore\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+.SS "string prova_ingresso_2022\&.Bolletta\&.tipoMateria\fC [get]\fP, \fC [set]\fP, \fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.

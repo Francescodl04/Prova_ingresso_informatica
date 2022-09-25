@@ -1,0 +1,16 @@
+.TH "prova_ingresso_2022.Program" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+prova_ingresso_2022.Program \- La classe \fBProgram\fP esegue la totalità della visualizzazione dei risultati delle altre classi e metodi\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+La classe \fBProgram\fP esegue la totalità della visualizzazione dei risultati delle altre classi e metodi\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.

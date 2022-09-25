@@ -1,0 +1,31 @@
+.TH "prova_ingresso_2022" 3pdf "Sun Sep 25 2022" "Version 1.0" "Riscaldadvisor" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+prova_ingresso_2022
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBolletta\fP"
+.br
+.RI "La classe \fBBolletta\fP rappresenta i costi annuali dell'energia\&. Contiene i metodi per ottenere le informazioni sulla bolletta, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio delle bollette in JSON\&. "
+.ti -1c
+.RI "class \fBOperazioniFile\fP"
+.br
+.RI "Classe che esegue le operazioni inerenti ai file\&. "
+.ti -1c
+.RI "class \fBProgram\fP"
+.br
+.RI "La classe \fBProgram\fP esegue la totalità della visualizzazione dei risultati delle altre classi e metodi\&. "
+.ti -1c
+.RI "class \fBSistemaRiscaldamento\fP"
+.br
+.RI "La classe \fBSistemaRiscaldamento\fP rappresenta il sistema di riscaldamento\&. Contiene i metodi per ottenere le informazioni sul riscaldamento, nonché per calcolarla e visualizzarne le caratteristiche\&. Inoltre è serializzabile, quindi può essere usata per il salvataggio dei sistemi di riscaldamento in JSON\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Riscaldadvisor from the source code\&.
